@@ -4,6 +4,7 @@
   "private": true,
   "devDependencies": {
     "concurrently": "4.1.0",
+    "prettier": "^1.18.2",
     "react-scripts": "^2.1.1"
   },
   "dependencies": {
@@ -19,6 +20,7 @@
     "stylus": "0.54.5"
   },
   "scripts": {
+    "format": "prettier \"src/**/*.{js,html}\" --write",
     "dev": "react-scripts start",
     "start": "react-scripts start",
     "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
